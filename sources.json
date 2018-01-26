@@ -1,0 +1,54 @@
+[
+    {
+        "url": "http://services.swpc.noaa.gov/text/wing-kp.txt",
+        "dir": "wing-kp",
+        "description": "Wing KP",
+        "frequency": "every 15 minutes",
+        "cron": "*/15 * * * *"
+    },
+
+    {
+        "url": "http://services.swpc.noaa.gov/text/weekly.txt",
+        "dir": "weekly-forecast",
+        "description": "Weekly highlights and forecast",
+        "frequency": "once per day",
+        "cron": "0 0 * * *"
+    },
+
+    {
+        "url": "http://services.swpc.noaa.gov/text/advisory-outlook.txt",
+        "dir": "advisory-lookout",
+        "description": "Advisory and outlook",
+        "frequency": "once every 12 hours",
+        "cron": "0 */12 * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/text/ace-epam.txt",
+        "dir": "ace/epam",
+        "description": "5-minute averaged Real-time Differential Electron and Proton Flux",
+        "frequency": "once every 5 minutes",
+        "cron": "*/5 * * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/text/ace-sis.txt",
+        "dir": "ace/sis",
+        "description": "5-minute averaged Real-time Integral Flux of High-energy Solar Protons",
+        "frequency": "once every 5 minutes",
+        "cron": "*/5 * * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/text/ace-magnetometer.txt",
+        "dir": "ace/magnetometer",
+        "description": "1-minute averaged Real-time Interplanetary Magnetic Field Values",
+        "frequency": "once every minute",
+        "cron": "*/1 * * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/text/ace-swepam.txt",
+        "dir": "ace/swepam",
+        "description": "1-minute averaged Real-time Bulk Parameters of the Solar Wind Plasma",
+        "frequency": "once every minute",
+        "cron": "*/1 * * * *"
+    }
+
+]
