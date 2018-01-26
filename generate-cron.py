@@ -5,7 +5,7 @@ import os
 
 
 ABSOLUTE_PATH = os.path.dirname(os.path.realpath(__file__))
-JOB_STR = '{cron} {absolute_path}/get.py {url} > {absolute_path}/{directory}`date -d "today" +"%Y-%m-%d-%H%M%S"`.txt'
+JOB_STR = '{cron} {absolute_path}/get.py {url} > {absolute_path}/{directory}$(date -d "today" +"%Y-%m-%d-%H%M%S").txt'
 
 configuration = json.loads(open("sources.json", "r").read())
 
