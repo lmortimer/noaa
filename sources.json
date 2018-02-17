@@ -56,6 +56,30 @@
         "description": "1-minute averaged Real-time Bulk Parameters of the Solar Wind Plasma",
         "frequency": "once every minute",
         "cron": "*/1 * * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/products/solar-wind/mag-5-minute.json",
+        "dir": "dscovr/mag",
+        "id": "dscovr-mag",
+        "description": "DSCOVR bx, by, bz, bt",
+        "frequency": "once every minute",
+        "cron": "*/1 * * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/products/solar-wind/plasma-5-minute.json",
+        "dir": "dscovr/plasma",
+        "id": "dscovr-plasma",
+        "description": "DSCOVR solar wind speed, density, temperature ",
+        "frequency": "once every minute",
+        "cron": "*/1 * * * *"
+    },
+    {
+        "url": "http://services.swpc.noaa.gov/products/solar-wind/ephemerides.json",
+        "dir": "dscovr/ephemerides",
+        "id": "dscovr-ephemerides",
+        "description": "",
+        "frequency": "once every hour",
+        "cron": "* */1 * * *"
     }
 
 ]
